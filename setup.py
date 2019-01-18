@@ -1,5 +1,4 @@
 #! /usr/bin/env python
-"""A template for scikit-learn compatible packages."""
 
 import codecs
 import os
@@ -12,11 +11,11 @@ with open(ver_file) as f:
     exec(f.read())
 
 DISTNAME = 'unexpected-pattern-coocurrence'
-DESCRIPTION = 'A template for scikit-learn compatible packages.'
+DESCRIPTION = 'Implementation of: Bertens et al. Efficiently Discovering Unexpected Pattern Co-Ocurrences, SDM17, 2017'
 with codecs.open('README.rst', encoding='utf-8-sig') as f:
     LONG_DESCRIPTION = f.read()
-MAINTAINER = 'V. Birodkars, G. Lemaitre'
-MAINTAINER_EMAIL = 'vighneshbirodkar@nyu.edu, g.lemaitre58@gmail.com'
+MAINTAINER = 'James Dyer'
+MAINTAINER_EMAIL = 'jdyer@apache.org'
 URL = 'https://github.com/scikit-learn-contrib/project-template'
 LICENSE = 'new BSD'
 DOWNLOAD_URL = 'https://github.com/scikit-learn-contrib/project-template'
