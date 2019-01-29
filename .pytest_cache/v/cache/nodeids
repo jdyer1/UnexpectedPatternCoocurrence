@@ -1,0 +1,9 @@
+[
+  "src/tests/testUnexpectedPatternCoocurrence.py::test_compatibility",
+  "src/tests/testUnexpectedPatternCoocurrence.py::test_csr_matrix_one_hot_encoded",
+  "src/tests/testUnexpectedPatternCoocurrence.py::test_csr_matrix_not_encoded",
+  "src/tests/testUnexpectedPatternCoocurrence.py::test_dense_matrix_one_hot_encoded",
+  "src/tests/testUnexpectedPatternCoocurrence.py::test_dense_matrix_not_encoded",
+  "src/tests/testUnexpectedPatternCoocurrence.py::test_dataframe_one_hot_encoded",
+  "src/tests/testUnexpectedPatternCoocurrence.py::test_dataframe_not_encoded"
+]
