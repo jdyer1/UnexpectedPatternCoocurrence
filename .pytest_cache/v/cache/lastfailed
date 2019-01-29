@@ -1,4 +1,0 @@
-{
-  "src/tests/testUnexpectedPatternCoocurrence.py::test_fit": true,
-  "src/tests/testUnexpectedPatternCoocurrence.py::test_predict": true
-}

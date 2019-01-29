@@ -71,3 +71,5 @@ target/
 .classpath
 .project
 .pydevproject
+
+.pytest_cache/
