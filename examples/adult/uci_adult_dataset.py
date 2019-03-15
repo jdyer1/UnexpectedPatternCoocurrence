@@ -55,17 +55,6 @@ def loadDictionary():
     
 
 if __name__ == '__main__':
-    #findAnomalies()
-    import requests
-    response = requests.get(
-        'https://en.wikipedia.org/w/api.php',
-        {   'action': 'query',
-            'format': 'json',
-            'titles': 'Mount_Mansfield',
-            'prop': 'extracts',
-            'explaintext': True
-        }
-    ).json()
-    page = next(iter(response['query']['pages'].values()))
-    print(page['extract'])
+    findAnomalies()
+    
 

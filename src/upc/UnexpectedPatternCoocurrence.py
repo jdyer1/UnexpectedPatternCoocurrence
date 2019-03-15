@@ -50,15 +50,13 @@ class UnexpectedPatternCoocurrence(BaseEstimator):
            Technical Report 1512.07048v2.
     '''
 
-    def __init__(self, threshold=.9, encoded=True):
-        self._patternCounts = { }
-        self._numExamples = 0
-        
+    def __init__(self, threshold=.9, encoded=True):                
         if not isinstance(threshold, INTEGER_TYPES) and not (0. < threshold <= 1.):
             raise ValueError("threshold must be an integer or a float in (0, 1], got %r" % threshold)
         
         self.threshold = threshold    
-        self.encoded = encoded   
+        self.encoded = encoded 
+          
             
     def fit(self, X, y=None):
         """Fit estimator.  Calling this multiple times adds additional 
@@ -83,6 +81,7 @@ class UnexpectedPatternCoocurrence(BaseEstimator):
         
         X = check_array(X, accept_sparse=['csr'])
         self._numExamples = self.countExamples(X)
+        self._patternCounts = { }
         self.computePatternCounts(X) 
         return self   
     
